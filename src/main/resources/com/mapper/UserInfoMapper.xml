@@ -9,6 +9,6 @@
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="age" property="age" jdbcType="INTEGER" />
     <result column="address" property="address" jdbcType="VARCHAR" />
-    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="user_id" property="user_id" jdbcType="INTEGER" />
   </resultMap>
 </mapper>

@@ -19,7 +19,7 @@ configurations {
 dependencies {
 
     //junit 单元测试
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
     //sping
     compile group: 'org.springframework', name: 'spring-core', version: '4.3.6.RELEASE'
     compile group: 'org.springframework', name: 'spring-context', version: '4.3.6.RELEASE'
@@ -78,12 +78,12 @@ dependencies {
     compile group: 'org.apache.shiro', name: 'shiro-ehcache', version: '1.3.2'
 
     //通用mapper
-    compile group: 'tk.mybatis', name: 'mapper', version: '3.3.2'
+    compile group: 'tk.mybatis', name: 'mapper', version: '3.4.2'
 
 
     mybatisGenerator 'org.mybatis.generator:mybatis-generator-core:1.3.2'
     mybatisGenerator 'mysql:mysql-connector-java:5.1.36'
-    mybatisGenerator 'tk.mybatis:mapper:3.3.2'
+    mybatisGenerator 'tk.mybatis:mapper:3.4.2'
 }
 
 def getDbProperties = {

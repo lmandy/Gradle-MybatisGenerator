@@ -25,7 +25,14 @@
             <!--<generatedKey column="epa_id" sqlStatement="Mysql" identity="true" />-->
         <!--</table>-->
 
-        <table tableName="${tableName}" domainObjectName="${domainObjectName}">
+        <table tableName="${tableName}" domainObjectName="${domainObjectName}"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true">
+            <property name="useActualColumnNames" value="true"/>
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
 
         </table>
     </context>

@@ -5,6 +5,7 @@ import javax.persistence.*;
 @Table(name = "user_info")
 public class UserInfo {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String name;
@@ -13,8 +14,7 @@ public class UserInfo {
 
     private String address;
 
-    @Column(name = "user_id")
-    private Integer userId;
+    private Integer user_id;
 
     /**
      * @return id
@@ -75,14 +75,25 @@ public class UserInfo {
     /**
      * @return user_id
      */
-    public Integer getUserId() {
-        return userId;
+    public Integer getUser_id() {
+        return user_id;
     }
 
     /**
-     * @param userId
+     * @param user_id
      */
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUser_id(Integer user_id) {
+        this.user_id = user_id;
+    }
+
+    @Override
+    public String toString() {
+        return "UserInfo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", address='" + address + '\'' +
+                ", user_id=" + user_id +
+                '}';
     }
 }
