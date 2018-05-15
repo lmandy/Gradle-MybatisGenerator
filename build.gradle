@@ -52,6 +52,8 @@ dependencies {
 
 //mybatis及依赖包
     compile group: 'org.mybatis', name: 'mybatis', version: '3.4.2'
+//mysql驱动
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.36'
 //spring 整合 mybatis
     compile group: 'org.mybatis', name: 'mybatis-spring', version: '1.3.0'
 //dbcp 连接池配置数据库
@@ -74,6 +76,9 @@ dependencies {
     compile group: 'org.apache.shiro', name: 'shiro-web', version: '1.3.2'
     compile group: 'org.apache.shiro', name: 'shiro-spring', version: '1.3.2'
     compile group: 'org.apache.shiro', name: 'shiro-ehcache', version: '1.3.2'
+
+    //通用mapper
+    compile group: 'tk.mybatis', name: 'mapper', version: '3.3.2'
 
 
     mybatisGenerator 'org.mybatis.generator:mybatis-generator-core:1.3.2'
